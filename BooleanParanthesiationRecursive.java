@@ -2,7 +2,7 @@ package AdityaVerma;
 
 class BooleanParanthesiationRecursive {
 	public static void main(String[] args) {
-		String expression = "T|F&T^F";
+		String expression = "T^F|F";
 		int result = solve(expression, 0, expression.length() - 1, true);
 		System.out.println("Number of ways to make the expression true: " + result);
 	}
