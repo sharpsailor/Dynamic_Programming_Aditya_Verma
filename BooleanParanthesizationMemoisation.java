@@ -3,7 +3,7 @@ package AdityaVerma;
 import java.util.*;
 
 public class BooleanParanthesizationMemoisation {
-	static int m =1003;
+	static int m =1003; // Modulo function to handle the over flow we used a prime number
 	public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String X = sc.next();
@@ -16,6 +16,7 @@ public class BooleanParanthesizationMemoisation {
 
         System.out.println(solve(X, 0, X.length() - 1, true));
     }
+	
 	/*	Matrix dimensions depend on changing variables in this case its 3 so it would be a 3D Matrix i.e. i, j , isTrue are the changing variable
 *	i and j values depend on constraints in our case ->1000 so [1001] and for isTrue a size [2]
 *   Also we can use Map since imaging 3d matrix is not imaginable
